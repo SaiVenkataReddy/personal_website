@@ -1,0 +1,47 @@
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.skill i {
+    margin-right: 10px;
+    color: #007bff;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--first-color);
+    /*!*background-color: var(--container-color);*/
+    color: var(--text-white);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.icon {
+    color: var(--title-color); /* Icon color */
+    font-size: 20px; /* Adjust icon size */
+}
+
+.skills-section {
+    padding: 10px;
+    box-shadow: 0 12px 14px rgba(143, 252, 252, 0.2);
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensure border-radius applies properly */
+    position: relative; /* Needed for pseudo-element */
+}
+
+/* Responsive Styling */
+@media (min-width: 768px) {
+    .skills-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+
