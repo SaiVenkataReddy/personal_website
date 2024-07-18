@@ -1,6 +1,7 @@
-import React, {useState} from "react";
-import Close from '../assets/assets/close.svg'
-function PortfolioItem({img, title, details}) {
+import React, { useState } from "react";
+import Close from '../assets/assets/close.svg';
+
+function ProjectsItems({ img, title, description, tags, details }) {
     const [modal, setModal] = useState(false);
 
     const toggleModal = () => {
@@ -9,10 +10,20 @@ function PortfolioItem({img, title, details}) {
 
     return (
         <div className='portfolio__item'>
-            <img src={img} alt='' className='portfolio__img'/>
+            <img src={img} alt='' className='portfolio__img' />
+
+            <div className='portfolio__info'>
+                <h3 className='portfolio__title'>{title}</h3>
+                <p className='portfolio__description'>{description}</p>
+                <div className='portfolio__tags'>
+                    {tags.map((tag, index) => (
+                        <span className='portfolio__tag' key={index}>{tag}</span>
+                    ))}
+                </div>
+            </div>
 
             <div className='portfolio__hover' onClick={toggleModal}>
-                <h3 className='portfolio__title'>{title}</h3>
+                <h3 className='portfolio__title__hover'>Click for more details</h3>
             </div>
 
             {modal && (
@@ -43,10 +54,8 @@ function PortfolioItem({img, title, details}) {
                     </div>
                 </div>
             )}
-
-
         </div>
     );
 }
 
-export default PortfolioItem;
+export default ProjectsItems;

@@ -15,11 +15,11 @@ import { FiFileText, FiUser, FiExternalLink } from 'react-icons/fi';
 import { calculateYearMonthFromToday } from '../controllers.js'
 
 import Work1 from './assets/project-1.jpeg';
-import Work2 from './assets/project-2.jpg';
+import Work2 from './assets/project-2.jpeg';
 import Work3 from './assets/project-3.jpeg';
-import Work4 from './assets/project-4.jpeg';
-import Work5 from './assets/project-5.jpg';
-import Work6 from './assets/project-6.jpg';
+import Work4 from './assets/project-1.jpeg';
+import Work5 from './assets/project-2.jpeg';
+import Work6 from './assets/project-3.jpeg';
 
 import Theme1 from './assets/purple.png';
 import Theme2 from './assets/red.png';
@@ -333,12 +333,16 @@ export const portfolio = [
   {
     id: 1,
     img: Work1,
-    title: 'Photo Editing',
+    title: 'Music Genre Classification',
+    description: 'kcndjc  kjddds bds dlksdn s kcndjc  kjddds bds dlksdn s kcndjc  kjddds bds dlksdn s kcndjc  kjddds bds dlksdn s kcndjc  kjddds bds dlksdn s kcndjc  kjddds bds dlksdn s ',
+    tags: ["Machine Learning", "Neural Networks"],
     details: [
       {
         icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Photo',
+        title: '',
+        desc: 'Acquired GTZAN dataset from Kaggle and built various machine learning and deep learning methods for multi-class classification.\n' +
+            'Attained a peak accuracy of 92% using Neural Networks and 85% with K-Nearest Neighbors (KNN) techniques.\n',
+
       },
       {
         icon: <FiUser />,
@@ -362,6 +366,8 @@ export const portfolio = [
     id: 2,
     img: Work2,
     title: 'Website Design',
+    description: '',
+    tags: ["Machine Learning", "Neural Networks"],
     details: [
       {
         icon: <FiFileText />,
@@ -390,6 +396,8 @@ export const portfolio = [
     id: 3,
     img: Work3,
     title: 'Video Editing',
+    description: '',
+    tags: ["Machine Learning", "Neural Networks"],
     details: [
       {
         icon: <FiFileText />,
@@ -418,6 +426,8 @@ export const portfolio = [
     id: 4,
     img: Work4,
     title: 'Video Editing',
+    description: '',
+    tags: ["Machine Learning", "Neural Networks"],
     details: [
       {
         icon: <FiFileText />,
@@ -446,6 +456,8 @@ export const portfolio = [
     id: 5,
     img: Work5,
     title: 'Landing Page',
+    description: '',
+    tags: ["Machine Learning", "Neural Networks"],
     details: [
       {
         title: 'Project : ',
@@ -470,6 +482,8 @@ export const portfolio = [
     id: 6,
     img: Work6,
     title: 'Photo Editing',
+    description: '',
+    tags: ["Machine Learning", "Neural Networks"],
     details: [
       {
         icon: <FiFileText />,
